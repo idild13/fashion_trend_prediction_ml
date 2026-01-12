@@ -20,9 +20,10 @@ Key steps:
 ---
 ## Project Structure
 ```text
-predict-next-fashion/
+fashion_trend_prediction_ml/
 ├── notebooks/
-│   └── 01_predict_next_fashion.ipynb
+│   └── fashion_trend_prediction_ml.ipynb
+├── LICENSE
 ├── README.md
 └── requirements.txt
 ```
@@ -90,7 +91,7 @@ This highlights both the potential and the uncertainty inherent in forecasting f
 
 ---
 
-### 👉 [View notebook here](https://github.com/idild13/predict-next-fashion/blob/main/notebooks/01_predict_next_fashion.ipynb)
+### 👉 [View notebook here](https://github.com/idild13/fashion_trend_prediction_ml/blob/main/notebooks/fashion_trend_prediction_ml.ipynb)
 
 ---
 
