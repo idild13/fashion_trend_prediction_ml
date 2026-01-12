@@ -10,6 +10,8 @@ The goal of the project is not only model performance, but also to demonstrate a
 ## Dataset
 The dataset contains historical fashion trend signals observed over time, including indicators such as trend intensity and temporal patterns. Each observation represents a fashion item at a given point in time, with a binary target variable indicating whether it becomes a future trend.
 
+ 👉 [View dataset](Dataset/tendances.csv)
+ 
 Key steps:
 
 - Loaded and inspected the raw dataset (tendances.csv)
