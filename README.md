@@ -35,14 +35,6 @@ predict-next-fashion/
 
 ---
 
-## 📈 Next Steps
-- Add feature engineering (e.g., seasonality, color family, brand)
-- Test models (Linear Regression, Decision Trees, XGBoost)
-- Visualize top features driving trend predictions
-- Deploy with a simple dashboard (optional)
-
----
-
 ## 👩‍💻 Author
 **Idil Dorak**  
 Data & Marketing Analytics Professional  
