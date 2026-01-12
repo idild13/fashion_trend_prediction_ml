@@ -1,20 +1,20 @@
 # Predicting Fashion Trends with Machine Learning 👗🧠
 
 ## Project Overview 
-This project explores whether short-term fashion trends can be predicted using historical trend data. Using supervised machine learning, I trained and evaluated classification models to forecast whether a fashion item will become a future trend based on past popularity signals.
+This project explores whether short-term fashion trends can be predicted using historical time-ordered trend data. Using supervised machine learning, I trained and evaluated classification models to forecast whether a fashion item will become a future trend based on past popularity signals and their evolution over time.
 
-The goal of the project is not only model performance, but also to demonstrate an end-to-end data science workflow: data exploration, feature engineering, model training, evaluation, and interpretation.
+The goal of the project is not only model performance, but also to demonstrate an end-to-end data science workflow: data exploration, time-aware feature engineering, model training, evaluation, and interpretation.
 
 ---
 
 ## Dataset
-The dataset contains historical fashion trend signals over time, including indicators such as trend intensity and temporal patterns. Each observation represents a fashion item at a given point in time, with a binary target variable indicating whether it becomes a future trend.
+The dataset contains historical fashion trend signals observed over time, including indicators such as trend intensity and temporal patterns. Each observation represents a fashion item at a given point in time, with a binary target variable indicating whether it becomes a future trend.
 
 Key steps:
 
 - Loaded and inspected the raw dataset (tendances.csv)
 - Checked for missing values and inconsistencies
-- Selected relevant numerical features for modeling
+- Selected relevant numerical features derived from time-based trend behavior
 - Defined a clear target variable for prediction
 
 ---
@@ -33,25 +33,29 @@ fashion_trend_prediction_ml/
 ### 1. Exploratory Data Analysis (EDA)
 
 - Analyzed feature distributions and class balance
-- Identified correlations between trend indicators
+- Identified correlations between trend indicators across time
 - Validated assumptions before modeling
 
 ### 2. Data Preparation
 
-- Split data into training and test sets
+- Split data into training and test sets with attention to temporal structure
 - Scaled numerical features where appropriate
 - Ensured reproducibility using fixed random states
 
-### 3. Modeling
+### 3. Time Series Modeling
 
-I implemented and compared multiple classification models:
+The data is inherently time-ordered. Time-series techniques were applied to model underlying trend dynamics and smooth temporal signals, capturing short-term momentum and historical context. These time-based patterns informed downstream machine learning models rather than being used for direct forecasting.
+
+### 4. Modeling
+
+I implemented and compared multiple classification models using time-series-informed features:
 
 - Logistic Regression (baseline)
 - Random Forest Classifier
 
-These models were chosen to balance interpretability and performance.
+These models were chosen to balance interpretability and performance within a time-series-driven classification setting.
 
-### 4. Evaluation
+### 5. Evaluation
 
 Model performance was evaluated using:
 
@@ -66,10 +70,10 @@ This allowed for a nuanced comparison beyond a single metric, especially given p
 ## Results & Insights
 
 - Tree-based models captured non-linear relationships better than linear baselines
-- Certain trend intensity features showed stronger predictive power
-- The results suggest that short-term trend momentum can be partially predictive, but with clear limitations
+- Certain time-series-derived trend intensity features showed stronger predictive power
+- The results suggest that short-term trend momentum over time can be partially predictive, but with clear limitations
 
-This highlights both the potential and the uncertainty inherent in forecasting fashion trends.
+This highlights both the potential and the uncertainty inherent in time-series-informed fashion trend prediction.
 
 --- 
 
@@ -77,7 +81,7 @@ This highlights both the potential and the uncertainty inherent in forecasting f
 
 - Dataset size and feature richness limit generalization
 - External signals (social media, search trends, seasonality) could significantly improve predictions
-- Future iterations could explore time-series models or ensemble approaches
+- Future iterations could explore hybrid time-series forecasting and classification approaches or ensemble approaches
 
 --- 
 
@@ -98,4 +102,4 @@ This highlights both the potential and the uncertainty inherent in forecasting f
 ## 👩‍💻 Author
 **Idil Dorak**  
 Data & Marketing Analytics Professional  
-📍 Berlin | [Le Wagon Bootcamp Graduate]
+📍 Berlin 
