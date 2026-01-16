@@ -105,3 +105,7 @@ This highlights both the potential and the uncertainty inherent in time-series-i
 **Idil Dorak**  
 Data & Marketing Analytics Professional  
 📍 Berlin 
+
+---
+
+This project was completed as part of Le Wagon's Data Analytics Bootcamp.
